@@ -8,7 +8,7 @@ std::uniform_int_distribution<> GenXPos(3, 8);
 std::uniform_int_distribution<> GenDetalPos(0, 3);
 
 /**
-  Конструктор
+   Конструктор
    на входе :  *
    на выходе : *
 */
