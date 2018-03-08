@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Gui.h"
-
+ 
 #define TIMESTEP       5             // Ўаг ускорени€ движени€
 #define SCORESTEP      5             // ћинимальное колличество очков дл€ начала ускорени€
 

@@ -1,12 +1,12 @@
 #include "Selector.h"
 
 /**
- Функция выбора и поворота детали
- на входе:        l_stField in_sField[FW][FH]     Ссылка на поле в котором происходит изменение поворот детали
+  Функция выбора и поворота детали
+    на входе:    l_stField in_sField[FW][FH]     Ссылка на поле в котором происходит изменение поворот детали
 				 l_stDot   in_sDetal[DS]         Поворачиваемая/изменяемая деталь
 				 short     in_shNowDetal         Номер текущей детали
 				 short     in_shNowPos           Позиция текущей детали
- на выходе: *
+   на выходе: *
 */
 void Selector(l_stField in_sField[FW][FH], l_stDot in_sDetal[DS], short in_shNowDetal, short in_shNowPos)
 {

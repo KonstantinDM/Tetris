@@ -13,8 +13,8 @@ std::uniform_int_distribution<> ColorToNull(0,2); // ƒиапазон 0 - 2
 
 /** 
  ‘ункци€ получени€ рандомного цвета
- на входе:       in_sColor[DS]   —сылка на массив цвета
- на выходе: *
+    на входе:       in_sColor[DS]   —сылка на массив цвета
+    на выходе: *
 */
 void GetRandomColor(GLfloat in_sColor[DS])
 {

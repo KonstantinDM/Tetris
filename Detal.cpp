@@ -1,6 +1,6 @@
 #include "Detal.h"	
 
-//Для пущей случайности
+// Для пущей случайности
 std::random_device rd;   // non-deterministic generator  
 std::mt19937 gen(rd());  // to seed mersenne twister.  
 std::uniform_int_distribution<> GenDetal(0, 6); // Диапазон 0 - 7
@@ -8,7 +8,7 @@ std::uniform_int_distribution<> GenXPos(3, 8);
 std::uniform_int_distribution<> GenDetalPos(0, 3);
 
 /**
- Конструктор
+  Конструктор
    на входе :  *
    на выходе : *
 */
@@ -18,7 +18,7 @@ TetrisDetal::TetrisDetal()
 }
 
 /**
- Функция установки случайной дитали со случайной позицией на страрт
+  Функция установки случайной дитали со случайной позицией на страрт
    на входе :  *
    на выходе : *
 */
