@@ -56,7 +56,7 @@ void TetrisNextDetal::ToPosition(int in_iX, int in_iY)
 	// Назначим новое положение с учетом отношения к главной секции
 	for (int i = 0; i < DS; i++)
 	{
-		m_sDetal[i].x = in_iX + (x - m_sDetal[i].x);
-		m_sDetal[i].y = in_iY + (y - m_sDetal[i].y);
+		m_sDetal[i].x = in_iX + (m_sDetal[i].x - x);
+		m_sDetal[i].y = in_iY + (m_sDetal[i].y - y);
 	}
 }
