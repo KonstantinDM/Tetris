@@ -1,30 +1,30 @@
-#pragma once
+п»ї#pragma once
 
 #include <GL/glut.h> 
 #include <random> 
 
-#define SQUARESCALE  20            // Размер клетки
+#define SQUARESCALE  20            // Р Р°Р·РјРµСЂ РєР»РµС‚РєРё
 								   
-#define WWIDTH       360           // Ширина окна
-#define WHEIGHT      480           // Высота окна
+#define WWIDTH       360           // РЁРёСЂРёРЅР° РѕРєРЅР°
+#define WHEIGHT      480           // Р’С‹СЃРѕС‚Р° РѕРєРЅР°
 								   
-#define GWIDTH       220           // Ширина игрового поля
-#define GHEIGHT      460           // Высота игрового поля
+#define GWIDTH       220           // РЁРёСЂРёРЅР° РёРіСЂРѕРІРѕРіРѕ РїРѕР»СЏ
+#define GHEIGHT      460           // Р’С‹СЃРѕС‚Р° РёРіСЂРѕРІРѕРіРѕ РїРѕР»СЏ
 								   
-#define CW           10            // Количество видимых клеток в ширину
-#define CH           22            // Количество видимых клеток в высоту  
+#define CW           10            // РљРѕР»РёС‡РµСЃС‚РІРѕ РІРёРґРёРјС‹С… РєР»РµС‚РѕРє РІ С€РёСЂРёРЅСѓ
+#define CH           22            // РљРѕР»РёС‡РµСЃС‚РІРѕ РІРёРґРёРјС‹С… РєР»РµС‚РѕРє РІ РІС‹СЃРѕС‚Сѓ  
 								   
-#define DS           4             // Колличсетво точек детали
+#define DS           4             // РљРѕР»Р»РёС‡СЃРµС‚РІРѕ С‚РѕС‡РµРє РґРµС‚Р°Р»Рё
 
 extern GLfloat g_aWhite[3];  
 extern GLfloat g_aLightWhite[3];
 
-// Структура точки
+// РЎС‚СЂСѓРєС‚СѓСЂР° С‚РѕС‡РєРё
 struct l_stDot { 
 	int x; 
 	int y;
 	GLfloat color[3] = { 0.0f, 0.0f, 0.0f };
 };
 
-// Получить случайный цвет
+// РџРѕР»СѓС‡РёС‚СЊ СЃР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚
 void GetRandomColor(GLfloat in_sColor[DS]);

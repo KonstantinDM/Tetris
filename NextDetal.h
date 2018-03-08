@@ -1,6 +1,6 @@
-#pragma once
+п»ї#pragma once
 #include "Detal.h"
-// Класс для отображения слежующей детали
+// РљР»Р°СЃСЃ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ СЃР»РµР¶СѓСЋС‰РµР№ РґРµС‚Р°Р»Рё
 class TetrisNextDetal :
 	public TetrisDetal
 {
@@ -9,7 +9,7 @@ public:
 	TetrisNextDetal();
 	~TetrisNextDetal();
 
-	void ToDetal(TetrisDetal* in_Detal);    // Копирование следующей дететали в текущую
-	void ToPosition(int in_iX, int in_iY);  // Установка на позицию отображения
+	void ToDetal(TetrisDetal* in_Detal);    // РљРѕРїРёСЂРѕРІР°РЅРёРµ СЃР»РµРґСѓСЋС‰РµР№ РґРµС‚РµС‚Р°Р»Рё РІ С‚РµРєСѓС‰СѓСЋ
+	void ToPosition(int in_iX, int in_iY);  // РЈСЃС‚Р°РЅРѕРІРєР° РЅР° РїРѕР·РёС†РёСЋ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ
 };
 

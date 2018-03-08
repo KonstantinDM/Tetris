@@ -1,28 +1,28 @@
-#include "Gui.h"
+п»ї#include "Gui.h"
 #include <random> 
 
-// Определение цветов
-GLfloat g_aWhite[3]      = { 1.0f, 1.0f, 1.0f };  // Белый для стат
-GLfloat g_aLightWhite[3] = { 0.2f, 0.2f, 0.2f };  // Белый(скорее серый) светлый для разлиновки поля
+// РћРїСЂРµРґРµР»РµРЅРёРµ С†РІРµС‚РѕРІ
+GLfloat g_aWhite[3]      = { 1.0f, 1.0f, 1.0f };  // Р‘РµР»С‹Р№ РґР»СЏ СЃС‚Р°С‚
+GLfloat g_aLightWhite[3] = { 0.2f, 0.2f, 0.2f };  // Р‘РµР»С‹Р№(СЃРєРѕСЂРµРµ СЃРµСЂС‹Р№) СЃРІРµС‚Р»С‹Р№ РґР»СЏ СЂР°Р·Р»РёРЅРѕРІРєРё РїРѕР»СЏ
 												  
-// Для пущей случайности						 	 
+// Р”Р»СЏ РїСѓС‰РµР№ СЃР»СѓС‡Р°Р№РЅРѕСЃС‚Рё						 	 
 std::random_device rdC;                           // non-deterministic generator  
 std::mt19937 genC(rdC());                         // to seed mersenne twister.  
-std::uniform_int_distribution<> Color(50, 100);   // Диапазон 50 - 100
-std::uniform_int_distribution<> ColorToNull(0,2); // Диапазон 0 - 2
+std::uniform_int_distribution<> Color(50, 100);   // Р”РёР°РїР°Р·РѕРЅ 50 - 100
+std::uniform_int_distribution<> ColorToNull(0,2); // Р”РёР°РїР°Р·РѕРЅ 0 - 2
 
 /** 
- Функция получения рандомного цвета
-    на входе:       in_sColor[DS]   Ссылка на массив цвета
-    на выходе: *
+ Р¤СѓРЅРєС†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ СЂР°РЅРґРѕРјРЅРѕРіРѕ С†РІРµС‚Р°
+    РЅР° РІС…РѕРґРµ:       in_sColor[DS]   РЎСЃС‹Р»РєР° РЅР° РјР°СЃСЃРёРІ С†РІРµС‚Р°
+    РЅР° РІС‹С…РѕРґРµ: *
 */
 void GetRandomColor(GLfloat in_sColor[DS])
 {
-	// Получим рандомный цвет
+	// РџРѕР»СѓС‡РёРј СЂР°РЅРґРѕРјРЅС‹Р№ С†РІРµС‚
 	in_sColor[0] = ((GLfloat)Color(genC) / 100 );
 	in_sColor[1] = ((GLfloat)Color(genC) / 100 );
 	in_sColor[2] = ((GLfloat)Color(genC) / 100 );
 
-	// Для насыщенносит обнулим один случайный
+	// Р”Р»СЏ РЅР°СЃС‹С‰РµРЅРЅРѕСЃРёС‚ РѕР±РЅСѓР»РёРј РѕРґРёРЅ СЃР»СѓС‡Р°Р№РЅС‹Р№
 	in_sColor[ColorToNull(genC)] = 0;
 };

@@ -1,5 +1,5 @@
-#pragma once
+п»ї#pragma once
 #include "Field.h"
  
-// Функция выбора и поворота детали
+// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° Рё РїРѕРІРѕСЂРѕС‚Р° РґРµС‚Р°Р»Рё
 void Selector(l_stField in_sField[FW][FH], l_stDot in_sDetal[DS], short in_shNowDetal, short in_shNowPos);

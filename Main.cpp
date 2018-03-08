@@ -1,9 +1,9 @@
-#include "Main.h"
+п»ї#include "Main.h"
 #include "Tetris.h"
  
 int main(int argc, char **argv)
 {
-	// Старт тетриса !
+	// РЎС‚Р°СЂС‚ С‚РµС‚СЂРёСЃР° !
 	TetrisRun(argc, argv);
 	return 0;
 }
