@@ -42,6 +42,10 @@ void TetrisField::Rebuild()//TODO Можно улучшить отслежива
 				for (int x = 1; x <= CW; x++)
 				{
 					m_sfield[x][yy].dot = m_sfield[x][yy + 1].dot;
+
+					m_sfield[x][yy].color[0] = m_sfield[x][yy + 1].color[0];
+					m_sfield[x][yy].color[1] = m_sfield[x][yy + 1].color[1];
+					m_sfield[x][yy].color[2] = m_sfield[x][yy + 1].color[2];
 				}
 			}
 			l_nLineOmmited++;
