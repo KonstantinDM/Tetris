@@ -91,7 +91,7 @@ int TetrisField::AddDetal(l_stDot *in_sDetal)//Перенос детали на 
    на входе  : short Номер линии
    на выходе : bool состояние заполнена ли линия
 */
-bool TetrisField::TestLine(short in_shLineNumber)//Проверка линии на заполненность, если что, то очистить ее
+bool TetrisField::TestLine(short in_shLineNumber)
 {
 	for (int x = 1; x <= CW; x++)
 	{
@@ -108,7 +108,7 @@ bool TetrisField::TestLine(short in_shLineNumber)//Проверка линии �
    на входе  : short Номер линии
    на выходе : *
 */
-void TetrisField::ClearLine(short in_shLineNumber)//Проверка линии на заполненность, если что, то очистить ее
+void TetrisField::ClearLine(short in_shLineNumber)
 {
 	for (int x = 1; x <= CW; x++)
 	{
